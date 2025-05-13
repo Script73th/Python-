@@ -1,0 +1,11 @@
+class Transport(object):
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+class Autobus(Transport):
+    def __init__(self,n,ms,ml):
+        super().__init__(n,ms,ml)
+        print(f"Название автомобиля: ", self.name, " скорость: ",self.max_speed, " пробег: ",self.mileage)
+        
+auto=Autobus("RenaultLogan", 180,2)
